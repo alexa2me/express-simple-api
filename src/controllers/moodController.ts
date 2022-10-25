@@ -18,6 +18,7 @@ export default class MoodController {
 
       res.status(200).send({ message: "Mood added successfully!" });
     } catch (err: any) {
+      console.log(err);
       res.status(400).send({
         message: err.message,
       });
