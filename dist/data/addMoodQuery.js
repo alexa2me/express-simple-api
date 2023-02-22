@@ -14,7 +14,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addMood = void 0;
 const connection_1 = __importDefault(require("../connection"));
+// ADD MOOD
 const addMood = (description) => __awaiter(void 0, void 0, void 0, function* () {
-    yield (0, connection_1.default)("mood").insert(description);
+    try {
+        yield (0, connection_1.default)("mood").insert(description);
+    }
+    catch (err) {
+        throw new Error(err);
+    }
 });
 exports.addMood = addMood;
+//# sourceMappingURL=addMoodQuery.js.map

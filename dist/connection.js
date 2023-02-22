@@ -13,8 +13,9 @@ const connection = (0, knex_1.default)({
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_SCHEMA,
-        port: Number(process.env.PORT) || 3306,
+        port: Number(process.env.DB_PORT) || 3306,
         multipleStatements: true,
     },
 });
 exports.default = connection;
+//# sourceMappingURL=connection.js.map

@@ -25,6 +25,7 @@ class MoodController {
                 res.status(200).send({ message: "Mood added successfully!" });
             }
             catch (err) {
+                console.log(err);
                 res.status(400).send({
                     message: err.message,
                 });
@@ -33,3 +34,4 @@ class MoodController {
     }
 }
 exports.default = MoodController;
+//# sourceMappingURL=moodController.js.map
