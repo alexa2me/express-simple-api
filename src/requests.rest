@@ -1,11 +1,11 @@
 ### PING-PONG
-GET http://localhost:3000/ta-acordado?
+GET http://localhost:25060/alo
 Content-Type: application/json
 
 ###
 
 ### ADD MOOD
-POST http://localhost:3000/mood
+POST http://localhost:25060/mood
 Content-Type: application/json
 
 {
