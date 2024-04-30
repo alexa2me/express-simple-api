@@ -18,9 +18,10 @@ const moodController_1 = __importDefault(require("./controllers/moodController")
 (0, dotenv_1.config)();
 const routes = express_1.default.Router();
 const moodController = new moodController_1.default();
-routes.get("/alo", (_, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.status(200).send("Diga");
+routes.get("/", (_, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.status(200).send("It's ON!!");
 }));
 routes.post("/mood", moodController.controlAddMood);
+routes.get("/mood", moodController.controlGetMoods);
 exports.default = routes;
 //# sourceMappingURL=routes.js.map

@@ -12,18 +12,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getMoods = exports.addMood = void 0;
+exports.getMoods = void 0;
 const connection_1 = __importDefault(require("../connection"));
-// ADD MOOD
-const addMood = (description) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        yield (0, connection_1.default)("mood").insert(description);
-    }
-    catch (err) {
-        throw new Error(err);
-    }
-});
-exports.addMood = addMood;
 // GET MOODS
 const getMoods = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -35,4 +25,4 @@ const getMoods = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.getMoods = getMoods;
-//# sourceMappingURL=addMoodQuery.js.map
+//# sourceMappingURL=getMoodQuery.js.map
